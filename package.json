@@ -1,0 +1,28 @@
+{
+  "name": "nayakans07",
+  "version": "1.0.0",
+  "description": "Management System for Nayakan's 2007",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kasunkv/nayakans07.git"
+  },
+  "author": "Kasun Kodagoda | K2V Software Solutions",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kasunkv/nayakans07/issues"
+  },
+  "homepage": "https://github.com/kasunkv/nayakans07#readme",
+  "dependencies": {
+    "angular": "^1.4.3",
+    "angular-ui-router": "^0.2.15",
+    "body-parser": "^1.13.2",
+    "express": "^4.13.1",
+    "font-awesome": "^4.3.0",
+    "mongoose": "^4.1.0"
+  }
+}
