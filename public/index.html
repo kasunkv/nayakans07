@@ -2,9 +2,77 @@
 <html lang="en" ng-app="nayakans07">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Official Website for Nayakan's 2007 - Old Boys Association, Batch 2007 of Bandaranayake Collage Gampaha.">
+	<meta name="author" content="K2V Software Solutions">
+	<title>Nayakan's 2007 | Bandaranayake College Gampaha</title>
+	<script src="./vendor/js/html5shiv.js"></script>
+	<link rel="shortcut icon" href="./vendor/img/ico/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./vendor/img/ico/icon-144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="./vendor/img/ico/icon-114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./vendor/img/ico/icon-72.png">
+	<link rel="apple-touch-icon-precomposed" href="./vendor/img/ico/icon-57.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./vendor/css/animate.min.css">
+	<link rel="stylesheet" href="./vendor/css/prettyPhoto.css">
+	<link rel="stylesheet" href="./vendor/css/main.css">
+	<link rel="stylesheet" href="./vendor/css/responsive.css">
+	<link rel="stylesheet" href="./vendor/css/fileinput.min.css">	
+	<link rel="stylesheet" href="./vendor/css/bootstrap-datetimepicker.min.css">	
+	<link rel="stylesheet" href="./vendor/css/formValidation.min.css">
 </head>
-<body>
+<body class="homepage">
+	<!-- UI View -->
+	<div ui-view></div>
+	<!--         -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="./vendor/js/jquery.isotope.min.js"></script>
+	<script src="./vendor/js/jquery.prettyPhoto.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="./vendor/js/main.js"></script>
+	<script src="./vendor/js/respond.min.js"></script>
+	<script src="./vendor/js/wow.min.js"></script>
+	<script src="./vendor/js/moment.min.js"></script>
+	<script src="./vendor/js/fileinput.min.js"></script>
+	<script src="./vendor/js/formValidation.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+	<script>
+	    $(function () {
+
+	        $('.carousel').carousel();
+
+	        var $window = $(window);
+	        var scrollTime = 1;
+	        var scrollDistance = 280;
+
+	        $window.on("mousewheel DOMMouseScroll", function (event) {
+
+	            event.preventDefault();
+
+	            var delta = event.originalEvent.wheelDelta / 120 || -event.originalEvent.detail / 3;
+	            var scrollTop = $window.scrollTop();
+	            var finalScroll = scrollTop - parseInt(delta * scrollDistance);
+
+	            TweenMax.to($window, scrollTime, {
+	                scrollTo: {y: finalScroll, autoKill: true},
+	                ease: Power1.easeOut,
+	                overwrite: 5
+	            });
+
+	        });
+	    });
+	</script> 
 	
+	<!-- Angular.js Files -->
+	<script src="./app.module.js"></script>
+	<script src="./app.config.js"></script>
+	<script src="./login/login.controller.js"></script>
+	<script src="./register/register.controller.js"></script>
+
+
 </body>
 </html>
