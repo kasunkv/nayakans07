@@ -2,5 +2,5 @@
 	'use strict';
 
 	angular
-		.module('nayakans07', ['ui.router']);
+		.module('nayakans07', ['ui.router', 'satellizer']);
 })();

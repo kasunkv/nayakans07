@@ -290,10 +290,43 @@
 
   .post_reply_comments {
     padding-left: 20px;
-  }
-    
+  }   
 
+  .navbar-nav>li{
+    text-align: center;
+    background-color: #272727;
+  }
+
+  .navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    line-height: 24px;
+  }  
 }
+
+@media (min-width: 767px) {
+  .navbar-inverse .navbar-nav > li > a {
+    padding-top: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #fff;
+    line-height: 24px;
+    width: 120px;
+    height: 110px;
+  }
+
+  .navbar-nav>li{
+    width: 120px;
+    text-align: center;
+    margin-top: -25px;
+    background-color: #272727;
+    height: 90px;
+  }
+
+   .about-image {
+      margin-top: 60px;
+  }
+}
+
 
 /* XS Portrait */
 @media (max-width: 480px) {
