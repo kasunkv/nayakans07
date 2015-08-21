@@ -7,7 +7,7 @@
 	var config = require('./api/config/configuration.js');
 
 	var app = express();
-	var port = process.env.PORT || 9001;
+	var port = process.env.PORT || 80;
 	var appRoutes = require('./api/routes.js');
 
 	// mongodb config
