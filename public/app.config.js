@@ -4,7 +4,7 @@
 	angular
 		.module('nayakans07')
 		.config(configuration)
-		.constant('API_URL', 'http://localhost:9001/api')
+		.constant('API_URL', 'http://localhost:8080/api')
 		.run(function ($window) {
 			var params = $window.location.search.substring(1);
 			// make sure params and window.opener and the locations of the popup and the origi is equal
@@ -59,7 +59,7 @@
 		$authProvider.facebook({
 			clientId: '138460523160494',
 			url: API_URL + '/auth/facebook',
-			redirectUri: 'http://localhost:9001/#/register'
+			redirectUri: 'http://localhost:8080/#/register'
 		});
 
 		// twitter *
